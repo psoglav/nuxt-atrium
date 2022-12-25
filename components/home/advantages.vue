@@ -8,12 +8,12 @@
           <span class="brand-name text-5xl">АТРИУМ</span>
         </h1>
         <h3>
-          — ПОСТАВЩИК <span class="brand-name">НАДЁЖНОГО</span> И
-          <span class="brand-name">ВЫСОКОТЕХНОЛОГИЧНОГО</span> БУРОВОГО
+          — ПОСТАВЩИК <span class="highlight">НАДЁЖНОГО</span> И
+          <span class="highlight">ВЫСОКОТЕХНОЛОГИЧНОГО</span> БУРОВОГО
           ОБОРУДОВАНИЯ
         </h3>
       </div>
-      <h3 class="uppercase text-center text-4xl font-medium">
+      <h3 class="projects-title">
         Более 100 успешно реализованных проектов в россии
       </h3>
       <div class="advantages-section__wrapper">
@@ -24,7 +24,7 @@
           <div class="advantages-section__text">
             <h4>
               Современная оснащенная<br />
-              <span class="brand-name">СЕРВИСНАЯ СЛУЖБА</span>
+              <span class="highlight">СЕРВИСНАЯ СЛУЖБА</span>
             </h4>
           </div>
         </div>
@@ -34,7 +34,7 @@
           </div>
           <div class="advantages-section__text">
             <h4>
-              <span class="brand-name">КВАЛИФИЦИРОВАННЫЕ</span><br />
+              <span class="highlight">КВАЛИФИЦИРОВАННЫЕ</span><br />
               кадры
             </h4>
           </div>
@@ -45,7 +45,7 @@
           </div>
           <div class="advantages-section__text">
             <h4>
-              <span class="brand-name">НАША СИЛА</span><br />
+              <span class="highlight">НАША СИЛА</span><br />
               - взаимоотношения с заказчиками
             </h4>
           </div>
@@ -68,7 +68,8 @@
   }
 
   &--container {
-    @apply w-full bg-black text-white flex flex-col gap-y-4 relative overflow-hidden;
+    @apply w-full text-white flex flex-col gap-y-4 relative overflow-hidden;
+    background-color: black;
   }
 
   .brand-name {
@@ -78,13 +79,21 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .highlight {
+    color: #e30613;
+  }
+
+  .projects-title {
+    @apply uppercase text-center text-4xl font-medium my-8;
+  }
+
   &__wrapper {
-    @apply flex gap-20 justify-center w-full flex-wrap;
+    @apply flex gap-x-20 gap-y-2 justify-center w-full flex-wrap;
     padding: 0 1rem;
   }
 
   &__item {
-    @apply flex justify-between items-center gap-4;
+    @apply flex justify-between items-center gap-x-4 border-2 sm:border-0 border-gray-800 w-full sm:w-auto py-8 px-4 sm:p-0 bg-gray-900 sm:bg-opacity-0 rounded-2xl;
     h4 {
       @apply text-xl font-medium;
     }
@@ -92,10 +101,10 @@
 
   &__icon {
     .icon {
+      @apply sm:w-24 w-32;
       display: grid;
       place-content: center;
-      width: 6rem;
-      height: 6rem;
+      aspect-ratio: 1/1;
       border: 2px #f2f2f222 solid;
       border-radius: 100%;
       background-color: #000;
@@ -131,7 +140,6 @@
       justify-content: center;
       margin: 0 auto;
       max-width: 30rem;
-      gap: 2rem;
     }
     &__text {
       gap: 2rem;
