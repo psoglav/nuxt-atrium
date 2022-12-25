@@ -28,7 +28,7 @@ defineProps<Props>()
     @apply flex flex-col lg:flex-row w-full gap-12;
   }
   &__content {
-    @apply flex flex-col gap-2 lg:w-full;
+    @apply flex flex-col gap-4 sm:gap-2 lg:w-full;
     color: #000000cc;
   }
 }

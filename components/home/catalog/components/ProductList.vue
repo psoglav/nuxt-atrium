@@ -11,7 +11,7 @@
 .product-list {
   @apply flex flex-col gap-10;
   &__container {
-    @apply gap-3 sm:gap-6 grid;
+    @apply gap-6 grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
