@@ -83,7 +83,7 @@ onMounted(() => {
     color: var(--fg);
     transition: background-color 0.5s $easeInOutCirc;
 
-    @include xs(padding, 0 0.5rem);
+    @include xs(padding, 1rem);
 
     .nav {
       @apply relative flex h-fit text-base w-full overflow-auto;

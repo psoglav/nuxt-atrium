@@ -10,7 +10,7 @@ defineProps({
 <template>
   <li class="product-advantage">
     <ui-icon :name="icon" size="1.2" />
-    <p><slot /></p>
+    <span><slot /></span>
   </li>
 </template>
 
