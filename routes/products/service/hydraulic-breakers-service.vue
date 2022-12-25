@@ -39,7 +39,7 @@ useHead({
         src="/images/products/gallery/service-hydraulic-breakers.jpg"
         alt="СЕРВИСНОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ ГИДРОМОЛОТОВ FURUKAWA"
         style="max-width: 40rem"
-        class="rounded-lg"
+        class="rounded-lg w-full"
       />
     </template>
   </product-page-wrapper>

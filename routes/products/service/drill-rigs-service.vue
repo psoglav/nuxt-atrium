@@ -39,7 +39,7 @@ useHead({
         src="/images/products/gallery/service-drill-rigs.png"
         alt="СЕРВИСНОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ БУРОВЫХ СТАНКОВ FURUKAWA"
         style="max-width: 40rem"
-        class="rounded-lg"
+        class="rounded-lg w-full"
       />
     </template>
   </product-page-wrapper>

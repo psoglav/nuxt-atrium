@@ -40,7 +40,7 @@ useHead({
         src="/images/products/gallery/spare-parts-drill-rigs.jpeg"
         alt="Запчасти для буровых станков Furukawa"
         style="max-width: 40rem"
-        class="rounded-lg"
+        class="rounded-lg w-full"
       />
     </template>
   </product-page-wrapper>
