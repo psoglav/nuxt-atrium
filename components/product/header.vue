@@ -1,12 +1,14 @@
-<script setup lang="ts">
+<script setup>
 import { useAutoAnimate } from '@formkit/auto-animate/vue'
 
-export interface Props {
-  title?: string
-  subtitle?: string
-}
-
-defineProps<Props>()
+defineProps({
+  title: String,
+  subtitle: String,
+  logo: {
+    type: Boolean,
+    default: true
+  }
+})
 
 const [root] = useAutoAnimate()
 </script>
@@ -30,6 +32,7 @@ const [root] = useAutoAnimate()
             src="/images/logo/furukawa.png"
             alt="furukawa"
             class="hidden md:block h-5"
+            v-if="logo"
           />
         </div>
       </div>
@@ -39,6 +42,7 @@ const [root] = useAutoAnimate()
           src="/images/logo/furukawa-sm.png"
           alt="furukawa"
           class="block md:hidden w-20"
+          v-if="logo"
         />
       </div>
     </div>

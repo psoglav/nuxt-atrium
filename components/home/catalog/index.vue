@@ -165,6 +165,7 @@ const drillingTool = ref([
     <ProductList
       title="БУРОВОЙ ИНСТРУМЕНТ"
       subtitle="Горно-шахтный буровой инструмент для различных типов бурения"
+      :logo="false"
     >
       <template #content>
         <product-card
