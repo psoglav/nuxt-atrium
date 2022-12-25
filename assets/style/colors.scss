@@ -1,0 +1,73 @@
+$accent: #7087ff;
+
+:root {
+  --accent: #7087ff;
+}
+
+[data-theme='dark'] {
+  --fg: white;
+  --fg-14: #ffffffee;
+  --fg-13: #ffffffdd;
+  --fg-12: #ffffffcc;
+  --fg-11: #ffffffbb;
+  --fg-10: #ffffffaa;
+  --fg-9: #ffffff99;
+  --fg-8: #ffffff88;
+  --fg-7: #ffffff77;
+  --fg-6: #ffffff66;
+  --fg-5: #ffffff55;
+  --fg-4: #ffffff44;
+  --fg-3: #ffffff33;
+  --fg-2: #ffffff22;
+  --fg-1: #ffffff11;
+  --bg: black;
+  --bg-14: #000000ee;
+  --bg-13: #000000dd;
+  --bg-12: #000000cc;
+  --bg-11: #000000bb;
+  --bg-10: #000000aa;
+  --bg-9: #00000099;
+  --bg-8: #00000088;
+  --bg-7: #00000077;
+  --bg-6: #00000066;
+  --bg-5: #00000055;
+  --bg-4: #00000044;
+  --bg-3: #00000033;
+  --bg-2: #00000022;
+  --bg-1: #00000011;
+  --rgb-white: 255;
+}
+
+[data-theme='light'] {
+  --fg: black;
+  --fg-14: #000000ee;
+  --fg-13: #000000dd;
+  --fg-12: #000000cc;
+  --fg-11: #000000bb;
+  --fg-10: #00000088;
+  --fg-9: #00000077;
+  --fg-8: #00000066;
+  --fg-7: #00000077;
+  --fg-6: #00000055;
+  --fg-5: #00000044;
+  --fg-4: #00000033;
+  --fg-3: #00000022;
+  --fg-2: #00000011;
+  --fg-1: #00000005;
+  --bg: white;
+  --bg-14: #ffffffee;
+  --bg-13: #ffffffdd;
+  --bg-12: #ffffffcc;
+  --bg-11: #ffffffbb;
+  --bg-10: #ffffff88;
+  --bg-9: #ffffff77;
+  --bg-8: #ffffff66;
+  --bg-7: #ffffff77;
+  --bg-6: #ffffff55;
+  --bg-5: #ffffff44;
+  --bg-4: #ffffff33;
+  --bg-3: #ffffff22;
+  --bg-2: #ffffff11;
+  --bg-1: #ffffff05;
+  --rgb-white: 0;
+}
