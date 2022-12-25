@@ -26,24 +26,40 @@
           <nuxt-link to="/products/pneumatic-drill-rig"
             >Пневматические станки</nuxt-link
           >
-          <nuxt-link to="/products">Гидромолоты FURUKAWA</nuxt-link>
-          <nuxt-link to="/products">Запасные части FURUKAWA</nuxt-link>
-          <nuxt-link to="/service">Сервисное обслуживание</nuxt-link>
+          <nuxt-link to="/products/hydraulic-breaker"
+            >Гидромолоты FURUKAWA</nuxt-link
+          >
+          <nuxt-link to="/products/spare-parts"
+            >Запасные части FURUKAWA</nuxt-link
+          >
+          <nuxt-link to="/products/service">Сервисное обслуживание</nuxt-link>
         </div>
         <div class="navigation__col">
           <div class="navigation__title">Буровой инструмент</div>
-          <nuxt-link to="/products">Пневмоударники высокого давления</nuxt-link>
-          <nuxt-link to="/products">Буровые пневмоударные коронки</nuxt-link>
-          <nuxt-link to="/products">Трехшарошечные долота</nuxt-link>
-          <nuxt-link to="/products"
+          <nuxt-link to="/products/dth-hammers"
+            >Пневмоударники высокого давления</nuxt-link
+          >
+          <nuxt-link to="/products/dth-bits"
+            >Буровые пневмоударные коронки</nuxt-link
+          >
+          <nuxt-link to="/products/rotary-drill-bits"
+            >Трехшарошечные долота</nuxt-link
+          >
+          <nuxt-link to="/products/rc-bits"
             >Буровой инструмент для RC бурения</nuxt-link
           >
-          <nuxt-link to="/products">Буровые трубы и адаптеры</nuxt-link>
-          <nuxt-link to="/service"
+          <nuxt-link to="/products/pipes-and-adapters"
+            >Буровые трубы и адаптеры</nuxt-link
+          >
+          <nuxt-link to="/products/button-bits"
             >Гидроперфораторные буровые коронки</nuxt-link
           >
-          <nuxt-link to="/service">Хвостовики гидроперфораторов</nuxt-link>
-          <nuxt-link to="/service">Буровые перфораторные штанги</nuxt-link>
+          <nuxt-link to="/products/shanks"
+            >Хвостовики гидроперфораторов</nuxt-link
+          >
+          <nuxt-link to="/products/rods"
+            >Буровые перфораторные штанги</nuxt-link
+          >
         </div>
       </div>
       <div class="footer__form">
