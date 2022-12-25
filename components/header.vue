@@ -11,21 +11,21 @@ const header = ref(null)
 const root = ref(null)
 const scrollY = ref(0)
 
-onMounted(() => {
-  if (process.client) {
-    root.value.style.position = 'fixed'
-
-    const observer = new ResizeObserver(([entry]) => {
-      document.body.style.marginTop = entry.contentRect.height + 'px'
-    })
-    observer.observe(root.value)
-  }
-
+const initStickyContainer = () => {
+  root.value.style.position = 'fixed'
+  const observer = new ResizeObserver(([entry]) => {
+    document.body.style.marginTop = entry.contentRect.height + 'px'
+  })
+  observer.observe(root.value)
   document.addEventListener('scroll', () => {
     scrollY.value =
       document.documentElement.scrollTop || document.body.scrollTop
     app.setScrollTop(scrollY.value)
   })
+}
+
+onMounted(() => {
+  if (process.client) initStickyContainer()
 })
 </script>
 
