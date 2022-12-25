@@ -25,18 +25,18 @@ useHead({
         Подземные буровые установки Furukawa оснащенные гидравлическим
         перфоратором
       </h3>
-      <br />
-      <product-advantage>
-        Гарантия высокопроизводительного бурения шпуров и скважин
-      </product-advantage>
-      <product-advantage>
-        Соответствие требованиям промышленной безопасности ГОСТ РФ
-      </product-advantage>
-      <product-advantage>
-        Высокая надежность и низкая стоимость владения
-      </product-advantage>
-      <product-advantage> Мобильность </product-advantage>
-      <br />
+      <div>
+        <product-advantage>
+          Гарантия высокопроизводительного бурения шпуров и скважин
+        </product-advantage>
+        <product-advantage>
+          Соответствие требованиям промышленной безопасности ГОСТ РФ
+        </product-advantage>
+        <product-advantage>
+          Высокая надежность и низкая стоимость владения
+        </product-advantage>
+        <product-advantage> Мобильность </product-advantage>
+      </div>
       <p>
         Буровые установки Furukawa для подземного бурения это залог надежности и
         уверенности. Прочная конструкция рам, податчика, стрелы и проверенные
