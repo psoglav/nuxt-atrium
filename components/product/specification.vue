@@ -1,29 +1,13 @@
 <script setup>
+import { chunk } from '@/helpers/array'
+
 const props = defineProps({
   items: Array,
-  name: String
+  name: String,
+  boldValues: Boolean
 })
 
-const data = ref([])
-
-const makeTable = () => {
-  const items = props.items
-  const cols = window.innerWidth < 600 ? 1 : 2
-
-  for (let i = Math.ceil(items.length / cols); i > 0; i--) {
-    let a = []
-    for (let c = cols; c > 0; c--) {
-      a.push(items.shift())
-    }
-    data.value.push(a)
-  }
-}
-
-onMounted(() => {
-  if (process.client) {
-    makeTable()
-  }
-})
+const data = ref(chunk(props.items, 2))
 </script>
 
 <template>
@@ -34,7 +18,13 @@ onMounted(() => {
     <table>
       <tbody>
         <tr v-for="(item, i) of data" :key="i">
-          <td v-for="(s, j) of item" :key="j">{{ s }}</td>
+          <td
+            v-for="(s, j) of item"
+            :key="j"
+            :class="{ bold: boldValues && j == 1 }"
+          >
+            {{ s }}
+          </td>
         </tr>
       </tbody>
     </table>
@@ -51,6 +41,9 @@ onMounted(() => {
 
   td {
     @apply text-left indent-4 sm:p-4 p-6 font-medium;
+    &.bold {
+      @apply font-bold;
+    }
   }
 }
 </style>

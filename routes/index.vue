@@ -5,7 +5,6 @@ definePageMeta({ layout: 'landing' })
 <template>
   <home-welcome />
   <home-catalog />
-  <home-partners />
+  <home-spare-parts />
   <home-advantages />
-  <home-map />
 </template>

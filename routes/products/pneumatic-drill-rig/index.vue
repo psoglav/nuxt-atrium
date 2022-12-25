@@ -17,6 +17,7 @@ useHead({
       <img
         src="/images/products/gallery/pneumatic-drill-rig.png"
         alt="ПНЕВМАТИЧЕСКИЕ БУРОВЫЕ СТАНКИ FURUKAWA"
+        style="max-width: 40rem"
         class="rounded-lg"
       />
       <br />
@@ -60,7 +61,7 @@ useHead({
     </template>
     <template #models>
       <product-card
-        path="/rotary-drill-rig/pcr-200"
+        path="/pneumatic-drill-rig/pcr-200"
         title="FURUKAWA PCR-200"
         preview="/images/products/models/PCR-200.jpg"
         :specs="[

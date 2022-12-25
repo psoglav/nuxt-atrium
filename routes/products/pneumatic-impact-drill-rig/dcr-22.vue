@@ -99,9 +99,3 @@ useHead({
     </template>
   </product-page-wrapper>
 </template>
-
-<style lang="scss" scoped>
-td {
-  text-align: left !important;
-}
-</style>

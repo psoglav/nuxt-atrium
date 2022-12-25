@@ -72,7 +72,7 @@ const { data } = await useAsyncData(() =>
       <div class="flex flex-col gap-4">
         <h2>ПИКИ ДЛЯ ГИДРОМОЛОТОВ FURUKAWA</h2>
         <p>Оригинальные пики для гидромолотов FRD.</p>
-        <product-models-wrapper relative>
+        <product-models-wrapper relative full-width>
           <product-card
             preview="/images/products/models/moil-rod.png"
             title="Остроконечная (MOIL ROD)"

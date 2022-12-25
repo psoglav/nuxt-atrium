@@ -71,11 +71,20 @@ p {
   text-indent: 1.5rem;
 }
 
+li {
+  margin-left: 15px;
+}
+
+.rounded-lg {
+  border-radius: 0.8rem;
+}
+
 table {
   overflow: auto;
   font: 600 1rem Inter;
+  font-size: 12px;
   border-radius: 17px;
-  box-shadow: inset 0 0 15px 2px #e6e6e6, 0px 100px 80px rgba(0, 0, 0, 0.02),
+  box-shadow: inset 0 0 15px 2px #f3f3f3, 0px 100px 80px rgba(0, 0, 0, 0.02),
     0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0143771),
     0px 22.3363px 17.869px rgba(0, 0, 0, 0.0119221),
     0px 12.5216px 10.0172px rgba(0, 0, 0, 0.01),

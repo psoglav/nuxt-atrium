@@ -14,7 +14,7 @@ defineProps<Props>()
       <div class="product-page-wrapper__content">
         <slot name="content" />
       </div>
-      <product-models-wrapper :disabled="noGrid" :auto-width="modelsAutoWidth">
+      <product-models-wrapper :disabled="noGrid" :auto-width="modelsAutoWidth" v-if="$slots.models">
         <slot name="models" />
       </product-models-wrapper>
     </div>

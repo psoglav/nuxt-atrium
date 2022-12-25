@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout" data-theme="light">
     <Header />
-    <section class="container pt-20">
+    <section class="container pt-10">
       <Breadcrumb />
     </section>
     <div class="page">

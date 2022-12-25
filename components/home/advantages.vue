@@ -4,7 +4,7 @@
     <section class="advantages-section">
       <div class="section__title">
         <h1>
-          КОМПАНИЯ <br />
+          КОМПАНИЯ
           <span class="brand-name text-5xl">АТРИУМ</span>
         </h1>
         <h3>
@@ -52,10 +52,16 @@
         </div>
       </div>
     </section>
-    <img
+    <div>
+      <section class="map-section">
+        <img src="/images/svg/map.svg" class="pp" />
+        <img src="/images/svg/map.svg" class="parallax" />
+      </section>
+    </div>
+    <!-- <img
       src="/images/background/page-divider.svg"
       class="w-full rotate-180 scale-105"
-    />
+    /> -->
   </div>
 </template>
 
@@ -68,7 +74,7 @@
   }
 
   &--container {
-    @apply w-full text-white flex flex-col gap-y-4 relative overflow-hidden;
+    @apply w-full text-white flex flex-col gap-y-4 relative overflow-hidden pb-16 border-b border-gray-800;
     background-color: black;
   }
 
@@ -95,7 +101,7 @@
   &__item {
     @apply flex justify-between items-center gap-x-4 border-2 sm:border-0 border-gray-800 w-full sm:w-auto py-8 px-4 sm:p-0 bg-gray-900 sm:bg-opacity-0 rounded-2xl;
     h4 {
-      @apply text-xl font-medium;
+      @apply text-xl font-medium leading-4;
     }
   }
 
@@ -105,7 +111,8 @@
       display: grid;
       place-content: center;
       aspect-ratio: 1/1;
-      border: 2px #f2f2f222 solid;
+      border: 2px #f2f2f2 solid;
+      outline: 6px #f2f2f233 solid;
       border-radius: 100%;
       background-color: #000;
     }
@@ -144,6 +151,30 @@
     &__text {
       gap: 2rem;
     }
+  }
+}
+.map-section {
+  padding: 0 !important;
+
+  &--container {
+    @apply w-full  text-white py-4;
+    // background: linear-gradient(0deg, #010101 0%, white 50%);
+    background: black;
+  }
+
+  @apply flex flex-col w-full relative;
+  align-items: center;
+
+  img {
+    width: 60%;
+    z-index: 1;
+  }
+
+  .parallax {
+    position: absolute;
+    filter: blur(50px);
+    opacity: 0.5;
+    z-index: 0;
   }
 }
 </style>

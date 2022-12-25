@@ -8,6 +8,7 @@ export interface Props {
   title: string
   specs?: [string, string][]
   showMore?: boolean
+  nowrap?: boolean
 }
 
 defineProps<Props>()
@@ -19,7 +20,11 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
 <template>
   <div
     class="product-card animate__animated animate__fadeIn animate__fast"
-    :class="{ 'has-slot': $slots.default, disabled: !path }"
+    :class="{
+      'has-slot': $slots.default,
+      disabled: !path,
+      nowrap
+    }"
     :style="{ animationDelay: `${key / 20}s` }"
   >
     <div class="product-card__loading-overlay" v-show="loading">
@@ -164,7 +169,7 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
   }
 
   &__content {
-    @apply w-full px-8;
+    @apply w-full px-4;
     h1 {
       font: 600 1.1rem Inter;
       transition: color 0.2s $easeOutCirc;
@@ -173,6 +178,11 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
 
   &__slot {
     @apply pb-6 flex flex-col flex-wrap max-h-40 gap-x-4;
+  }
+
+  &.nowrap &__slot {
+    @apply flex-nowrap;
+    max-height: max-content;
   }
 
   &.has-slot &__link {

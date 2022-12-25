@@ -2,7 +2,8 @@
 defineProps({
   disabled: Boolean,
   relative: Boolean,
-  autoWidth: Boolean
+  autoWidth: Boolean,
+  fullWidth: Boolean
 })
 </script>
 
@@ -12,7 +13,8 @@ defineProps({
     :class="{
       'product-models-wrapper--disabled': disabled,
       'product-models-wrapper--relative': relative,
-      'product-models-wrapper--auto-width': autoWidth
+      'product-models-wrapper--auto-width': autoWidth,
+      'product-models-wrapper--full-width': fullWidth
     }"
   >
     <slot />
@@ -31,6 +33,9 @@ defineProps({
   }
   &--auto-width {
     @apply w-fit;
+  }
+  &--full-width {
+    @apply w-full;
   }
 }
 </style>

@@ -44,7 +44,7 @@ onMounted(() => {
         <ui-link to="/products/underground-drill-rig"
           >Подземные буровые станки</ui-link
         >
-        <ui-link to="/products">Гидромолоты</ui-link>
+        <ui-link to="/products/hydraulic-breaker">Гидромолоты</ui-link>
         <ui-link to="/products">Буровой инструмент </ui-link>
         <ui-link to="/about">О компании</ui-link>
         <ui-link to="/contacts">Контакты</ui-link>
@@ -74,7 +74,7 @@ onMounted(() => {
   header {
     @apply relative w-full flex justify-between items-end flex-wrap md:flex-nowrap gap-4;
 
-    background-color: rgba(255, 255, 255, 0.461);
+    background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px var(--fg-2) solid;
     padding: 1rem 2rem;
     min-height: 6rem;

@@ -13,7 +13,8 @@
 
   &--container {
     @apply w-full  text-white py-4;
-    background: linear-gradient(0deg, #010101 0%, white 50%);
+    // background: linear-gradient(0deg, #010101 0%, white 50%);
+    background: black;
   }
 
   @apply flex flex-col w-full relative;
@@ -25,7 +26,7 @@
   }
 
   .pp {
-    transform: scale(1.2) translateY(-5%);
+    transform: scale(1.2);
   }
 
   .parallax {

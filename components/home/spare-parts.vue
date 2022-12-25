@@ -14,7 +14,7 @@ const images = ref([
 </script>
 
 <template>
-  <section class="partners-section">
+  <section class="spare-parts-section">
     <div class="section__title">
       <h1>ЗАПАСНЫЕ ЧАСТИ ДЛЯ БУРОВЫХ СТАНКОВ</h1>
       <h3>
@@ -22,19 +22,21 @@ const images = ref([
         SUNWARD, KAISHAN, ZEGA и др.
       </h3>
     </div>
-    <div class="partners-section__wrapper">
+    <div class="spare-parts-section__wrapper">
       <img :src="`/images/logo/${src}`" v-for="(src, i) in images" :key="i" />
     </div>
   </section>
 </template>
 
 <style lang="scss">
-.partners-section {
+.spare-parts-section {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   gap: 4rem;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 
   &__wrapper {
     @apply flex gap-x-8 gap-y-14 flex-wrap justify-center;
