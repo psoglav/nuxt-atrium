@@ -93,7 +93,7 @@
       @apply flex-col-reverse md:flex-row w-full justify-between gap-y-10;
     }
     &--bottom {
-      @apply flex-col-reverse xs:flex-row border-t border-gray-800 py-4;
+      @apply flex-col-reverse sm:flex-row border-t border-gray-800 py-4;
     }
   }
 

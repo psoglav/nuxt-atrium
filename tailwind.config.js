@@ -4,12 +4,11 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1.5rem',
+        DEFAULT: '3rem',
         lg: '2rem'
       }
     },
     screens: {
-      xs: '400px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
