@@ -89,6 +89,8 @@ onMounted(() => {
       @apply relative flex h-fit text-base w-full overflow-auto;
       font-family: Inter;
       font-weight: 500;
+      -webkit-mask-image: linear-gradient(90deg, black 75%, transparent 100%);
+      mask-image: linear-gradient(90deg, black 75%, transparent 100%);
     }
   }
 
