@@ -62,6 +62,8 @@ const { data } = await useAsyncData(() =>
         </tbody>
       </table>
       <br />
+      <br />
+      <br />
       <product-contact
         title="Подобрать и купить запасные части, пики и расходные материалы для гидромолотов Furukawa можно связавшись с нашими специалистами:"
       />
