@@ -31,12 +31,7 @@ const { data: data5 } = await useAsyncData(() =>
       :logo="false"
     />
     <template #content>
-      <img
-        src="/images/products/gallery/rc-bits-preview.png"
-        alt="БУРОВОЙ ИНСТРУМЕНТ ATRIUM ДЛЯ RC БУРЕНИЯ (REVERSE CIRCULATION)"
-        style="max-width: 40rem"
-        class="rounded-lg w-full"
-      />
+      <product-preview src="/images/products/gallery/rc-bits-preview.png" />
       <br />
       <div class="flex w-full flex-wrap gap-8">
         <product-table
@@ -57,6 +52,87 @@ const { data: data5 } = await useAsyncData(() =>
           style="max-width: 50rem"
           class="rounded-lg w-full"
         />
+        <div v-if="false">
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Длина<icon icon="tabler:ruler-measure" width="24px" /> 1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Диаметр<icon icon="mdi:diameter-variant" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Масса<icon icon="mdi:weight-kg" width="24px" /> 1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Хвостовик<icon icon="tabler:ruler-measure" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Диаметр скважины<icon icon="tabler:ruler-measure" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Диаметр скважины<icon icon="tabler:ruler-measure" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Рабочее давление<icon icon="carbon:pressure" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Частота удара<icon icon="game-icons:impact-point" width="24px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Скорость вращения<icon
+                icon="material-symbols:rotate-left"
+                width="24px"
+              />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Потребление воздуха при 1 МПа<icon icon="bi:fan" width="18px" />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Потребление воздуха при 1,8 МПа<icon
+                icon="bi:fan"
+                width="20px"
+              />
+              1252мм</b
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <b class="flex items-center gap-2"
+              >Потребление воздуха при 2,4 МПа<icon
+                icon="bi:fan"
+                width="24px"
+              />
+              1252мм</b
+            >
+          </div>
+        </div>
         <product-table :data="data3" />
       </div>
       <br />

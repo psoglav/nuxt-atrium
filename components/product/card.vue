@@ -75,7 +75,7 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
 }
 
 .product-card {
-  @apply w-full h-full select-none bg-white relative flex items-center flex-col gap-2;
+  @apply w-full h-full select-none bg-white relative flex items-center flex-col gap-2 overflow-hidden;
   border: 2px #10092c0c solid;
   border-radius: 2rem;
   transition: all 0.5s $easeOutCirc;

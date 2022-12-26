@@ -16,48 +16,49 @@ const { data } = await useAsyncData(() =>
 </script>
 
 <template>
-  <product-page-wrapper no-grid relative>
+  <section>
     <product-header
       title="ТРЕХШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ ГОРНО-РУДНОЙ ПРОМЫШЛЕННОСТИ"
       :logo="false"
     />
-    <template #content>
-      <img
+    <br />
+    <div class="flex gap-8 flex-col md:flex-row">
+      <product-preview
         src="/images/products/gallery/rotary-drill-bits-preview.png"
-        alt="ТРЕХШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ ГОРНО-РУДНОЙ ПРОМЫШЛЕННОСТИ"
-        style="max-width: 40rem"
-        class="rounded-lg w-full"
       />
-      <br />
-      <h3>БУРОВЫЕ ШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ ГОРНОРУДНОЙ ПРОМЫШЛЕННОСТИ</h3>
-      <li>Широкий диапазон конструктивных особенностей.</li>
-      <li>Боковая или комбинированная продувка.</li>
-      <li>Роликовая открытая опора из высококачественных материалов.</li>
-      <li>Обратный клапан лепесткового типа.</li>
-      <br />
-      <product-contact-form
-        title="ПОДОБРАТЬ И КУПИТЬ ТРЕХШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ БУРОВЫХ СТАНКОВ FURUKAWA, SANDVIK, ATLAS COPCO, EPIROC, MONTABERT, BOART LONGYEAR, KOKEN, TAMROCK, JUNJIN, SOOSAN, EVERDIGM, SINWARD, KAISHAN, HUATAI, RESEMIN, SHRAMM, СБШ и др. "
+      <product-advantages
+        title="БУРОВЫЕ ШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ ГОРНОРУДНОЙ ПРОМЫШЛЕННОСТИ"
+        :items="[
+          'Широкий диапазон конструктивных особенностей.',
+          'Боковая или комбинированная продувка.',
+          'Роликовая открытая опора из высококачественных материалов.',
+          'Обратный клапан лепесткового типа.'
+        ]"
       />
-    </template>
-    <template #models>
-      <table class="w-full">
-        <thead>
-          <tr>
-            <th>ДИАМЕТР, мм</th>
-            <th>КОД IADC</th>
-            <th>ПРИСОЕДИНИТЕЛЬНАЯ РЕЗЬБА</th>
-            <th>АРТИКУЛ</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item, i) of data.body" :key="i">
-            <td>{{ item['ДИАМЕТР, мм'] }}</td>
-            <td>{{ item['КОД IADC'] }}</td>
-            <td>{{ item['ПРИСОЕДИНИТЕЛЬНАЯ РЕЗЬБА'] }}</td>
-            <td>{{ item['АРТИКУЛ'] }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </template>
-  </product-page-wrapper>
+    </div>
+    <br />
+
+    <table class="w-full" style="max-width: 1024px">
+      <thead>
+        <tr>
+          <th>ДИАМЕТР, мм</th>
+          <th>КОД IADC</th>
+          <th>ПРИСОЕДИНИТЕЛЬНАЯ РЕЗЬБА</th>
+          <th>АРТИКУЛ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item, i) of data.body" :key="i">
+          <td>{{ item['ДИАМЕТР, мм'] }}</td>
+          <td>{{ item['КОД IADC'] }}</td>
+          <td>{{ item['ПРИСОЕДИНИТЕЛЬНАЯ РЕЗЬБА'] }}</td>
+          <td>{{ item['АРТИКУЛ'] }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <product-contact-form
+      title="ПОДОБРАТЬ И КУПИТЬ ТРЕХШАРОШЕЧНЫЕ ДОЛОТА ДЛЯ БУРОВЫХ СТАНКОВ FURUKAWA, SANDVIK, ATLAS COPCO, EPIROC, MONTABERT, BOART LONGYEAR, KOKEN, TAMROCK, JUNJIN, SOOSAN, EVERDIGM, SINWARD, KAISHAN, HUATAI, RESEMIN, SHRAMM, СБШ и др. "
+    />
+  </section>
 </template>
