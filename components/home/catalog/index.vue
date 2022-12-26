@@ -148,14 +148,31 @@ const drillingTool = ref([
           :preview="product.preview"
           :links="product.links"
         >
-          <product-link
-            v-for="(link, j) of product.links"
-            :key="j"
-            :path="product.path + '/' + link[0]"
-            icon="tabler:external-link"
-            :value="link[1]"
-            @click="loading = true"
-          />
+          <div
+            class="grid-cols-2 gap-x-4"
+            :class="{ grid: product.links.slice(5, 8).length }"
+          >
+            <div>
+              <product-link
+                v-for="(link, j) of product.links.slice(0, 5)"
+                :key="j"
+                :path="product.path + '/' + link[0]"
+                icon="tabler:external-link"
+                :value="link[1]"
+                @click="loading = true"
+              />
+            </div>
+            <div>
+              <product-link
+                v-for="(link, j) of product.links.slice(5, 8)"
+                :key="j"
+                :path="product.path + '/' + link[0]"
+                icon="tabler:external-link"
+                :value="link[1]"
+                @click="loading = true"
+              />
+            </div>
+          </div>
         </product-card>
       </template>
     </ProductList>
