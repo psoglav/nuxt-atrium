@@ -15,9 +15,13 @@ defineProps({
   >
     <h4 class="product-link--text">
       <div class="flex gap-2 items-center mb-1">
-        <ui-icon :name="icon" size="1" v-if="icon" />{{ value }}
+        <icon class="icon" :icon="icon" width="16px" v-if="icon" />{{ value }}
       </div>
-      <ui-icon name="arrow-forward" size="1" />
+      <icon
+        icon="eva:arrow-forward-outline"
+        width="16px"
+        class="icon icon--arrow-forward"
+      />
     </h4>
   </nuxt-link>
 </template>

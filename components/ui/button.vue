@@ -17,14 +17,14 @@ defineProps({
         'button--primary': primary,
         'button--no-blur': noBlur,
         'button--loading': loading,
-        'button--disabled': disabled,
+        'button--disabled': disabled || loading,
       },
     ]"
   >
     <div
       class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-8"
     >
-      <ui-icon spin name="circle-notch" size="2" v-if="loading" />
+      <icon icon="ph:circle-notch-duotone" class="text-white animate-spin-fast" width="20px" v-if="loading" />
     </div>
     <slot></slot>
   </div>

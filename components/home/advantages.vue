@@ -19,7 +19,11 @@
       <div class="advantages-section__wrapper">
         <div class="advantages-section__item">
           <div class="advantages-section__icon">
-            <ui-icon name="repair" size="3.5" />
+            <icon
+              icon="heroicons:wrench-screwdriver"
+              width="50px"
+              class="icon"
+            />
           </div>
           <div class="advantages-section__text">
             <h4>
@@ -30,7 +34,11 @@
         </div>
         <div class="advantages-section__item">
           <div class="advantages-section__icon">
-            <ui-icon name="workers" size="3.5" />
+            <icon
+              icon="clarity:employee-group-line"
+              width="50px"
+              class="icon"
+            />
           </div>
           <div class="advantages-section__text">
             <h4>
@@ -41,7 +49,11 @@
         </div>
         <div class="advantages-section__item">
           <div class="advantages-section__icon">
-            <ui-icon name="handshake" size="3.5" />
+            <icon
+              icon="fa6-regular:handshake"
+              width="50px"
+              class="icon"
+            />
           </div>
           <div class="advantages-section__text">
             <h4>
@@ -106,14 +118,12 @@
   }
 
   &__icon {
-    .icon {
-      @apply sm:w-24 w-32 flex items-center justify-center mb-4;
-      aspect-ratio: 1/1;
-      border: 2px #f2f2f2 solid;
-      box-shadow: 0 0 0 6px #f2f2f233;
-      border-radius: 100%;
-      background-color: #000;
-    }
+    @apply sm:w-24 w-32 flex items-center justify-center mb-4;
+    border: 2px #f2f2f2 solid;
+    box-shadow: 0 0 0 6px #f2f2f233;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    background-color: #000;
   }
 
   &__text {

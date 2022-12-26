@@ -124,7 +124,6 @@ const drillingTool = ref([
     <ProductList
       title="БУРОВЫЕ СТАНКИ И ГИДРОМОЛОТЫ FURUKAWA"
       subtitle="для открытых и подземных горных работ"
-      logo="furukawa"
     >
       <template #logo-md>
         <img
@@ -153,7 +152,7 @@ const drillingTool = ref([
             v-for="(link, j) of product.links"
             :key="j"
             :path="product.path + '/' + link[0]"
-            icon="external"
+            icon="tabler:external-link"
             :value="link[1]"
             @click="loading = true"
           />

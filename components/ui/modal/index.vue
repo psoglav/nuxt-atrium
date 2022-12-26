@@ -14,7 +14,7 @@ defineProps({
         <div class="modal__card--title">
           <slot name="title"></slot>
           <div class="modal__card--close" @click="$emit('close')">
-            <ui-icon name="close" size="1" />
+            <icon icon="ion:close-outline" width="24px" />
           </div>
         </div>
         <div class="modal__card--content">

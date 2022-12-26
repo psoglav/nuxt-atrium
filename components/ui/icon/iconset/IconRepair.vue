@@ -1,5 +1,0 @@
-<template>
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g stroke-width="2" fill="currentColor" stroke="currentColor"><path d="M23.479,18.479l5.278,5.278a4.242,4.242,0,0,1,0,6h0a4.242,4.242,0,0,1-6,0l-4.945-4.945" fill="none" stroke-linecap="square" stroke-miterlimit="10"></path> <polyline points="14.639 12.639 5 3 2 6 11.501 15.501" fill="none" stroke-miterlimit="10"></polyline> <path d="M30.634,5.366,27,9,23,5l3.634-3.634a6.49,6.49,0,0,0-8.368,7.965L1.652,24.484a2,2,0,0,0-.066,2.892l3.038,3.038a2,2,0,0,0,2.892-.066L22.669,13.734a6.487,6.487,0,0,0,7.965-8.368Z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"></path></g>
-</svg>
-</template>

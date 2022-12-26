@@ -29,13 +29,18 @@ const props = defineProps({
 
 <style lang="scss">
 .product-table {
-  @apply mt-8 sm:my-8;
+  @apply mt-8 sm:my-8 overflow-auto w-full;
+
+  table {
+    @apply w-full;
+  }
+
   h2 {
     @apply mb-4;
   }
 
   td {
-    @apply text-left indent-4 sm:p-4 p-6 font-medium;
+    @apply text-left indent-4 font-medium;
     &.bold {
       @apply font-bold;
     }

@@ -19,14 +19,8 @@ const { data: data2 } = await useAsyncData(() =>
 const { data: data3 } = await useAsyncData(() =>
   queryContent('/products/rc-bits/atr-4-4').findOne()
 )
-const { data: data4 } = await useAsyncData(() =>
-  queryContent('/products/rc-bits/atr-4-4-2').findOne()
-)
 const { data: data5 } = await useAsyncData(() =>
   queryContent('/products/rc-bits/atr-52').findOne()
-)
-const { data: data6 } = await useAsyncData(() =>
-  queryContent('/products/rc-bits/atr-52-2').findOne()
 )
 </script>
 
@@ -65,7 +59,6 @@ const { data: data6 } = await useAsyncData(() =>
         />
         <div class="flex w-full flex-wrap gap-8">
           <product-table :data="data3" />
-          <product-table :data="data4" />
         </div>
       </div>
       <br />
@@ -79,7 +72,6 @@ const { data: data6 } = await useAsyncData(() =>
         />
         <div class="flex w-full flex-wrap gap-8">
           <product-table :data="data5" />
-          <product-table :data="data6" />
         </div>
       </div>
       <br />

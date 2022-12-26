@@ -1,11 +1,11 @@
 <template>
   <div class="contacts-list">
     <a class="contacts-list__item" href="mailto:info@mining-tools.info">
-      <ui-icon name="message" size="1.1" />
+      <icon icon="ic:outline-email" width="20px" />
       <div class="contacts-list__value">info@mining-tools.info</div>
     </a>
     <a class="contacts-list__item" href="tel:+74232576701">
-      <ui-icon name="phone" size="0.9" />
+      <icon icon="ic:baseline-phone" width="20px" />
       <div class="contacts-list__value">+7 (423) 257 67 01</div>
     </a>
   </div>

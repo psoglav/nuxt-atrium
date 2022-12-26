@@ -11,21 +11,27 @@ const [root] = useAutoAnimate()
 </script>
 
 <template>
-  <div class="products-breadcrumb flex items-center gap-2" ref="root">
+  <div class="products-breadcrumb flex items-center" ref="root">
     <div
       class="flex items-center gap-2"
       v-for="(route, i) in routes"
       :key="route"
     >
-      <ui-icon v-show="i > 0" name="chevron-right" size="0.7" />
+      <icon
+        v-show="i > 0"
+        icon="system-uicons:chevron-right"
+        width="24px"
+        class="icon--chevron-right"
+      />
       <div class="products-breadcrumb__item flex items-center">
-        <ui-icon
+        <icon
           v-show="i == routes.length - 1"
-          name="arrow-forward"
-          size="0.7"
+          icon="eva:arrow-forward-outline"
+          width="12px"
+          class="icon--arrow-forward"
         />
         <ui-link :to="`/${routes.slice(1, i + 1).join('/')}`">
-          <ui-icon v-if="route == 'home'" name="home" size="1.5" />
+          <icon v-if="route == 'home'" icon="ic:round-home" width="20px" />
           <div v-else>
             {{
               (() => {

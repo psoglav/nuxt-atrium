@@ -20,7 +20,10 @@ const [root] = useAutoAnimate()
       v-if="!['/', '/products'].includes($route.path)"
       @click="$router.go(-1)"
     >
-      <ui-icon name="chevron-left" />
+      <icon
+        icon="system-uicons:chevron-left"
+        height="32px"
+      />
     </ui-link>
     <div class="product-header">
       <div class="product-header--top">
@@ -53,7 +56,7 @@ const [root] = useAutoAnimate()
 .product-header {
   @apply flex flex-col-reverse md:flex-col w-full;
   &--container {
-    @apply flex gap-2;
+    @apply flex gap-4;
   }
   h1 {
     @apply shrink sm:shrink-0 text-2xl xl:text-3xl;

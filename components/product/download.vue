@@ -20,7 +20,7 @@ defineProps<Props>()
         :href="item.href"
         class="text-accent hover:text-black flex items-center gap-x-2 w-fit"
       >
-        <ui-icon :name="item.icon" />
+        <icon :icon="item.icon" width="24px" class="icon" />
         {{ item.name }}
       </a>
     </div>

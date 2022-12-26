@@ -2,14 +2,14 @@
 defineProps({
   icon: {
     type: String,
-    default: 'o-check'
+    default: 'material-symbols:check-circle-outline-rounded'
   }
 })
 </script>
 
 <template>
   <li class="product-advantage">
-    <ui-icon :name="icon" size="1.2" />
+    <icon :icon="icon" width="20px" class="icon" />
     <span><slot /></span>
   </li>
 </template>

@@ -50,7 +50,7 @@ useHead({
           :items="[
             {
               href: '/pdf/hydraulic-breakers/Fxj1070.pdf',
-              icon: 'pdf',
+              icon: 'fluent:document-pdf-24-filled',
               name: 'Каталог запасных частей Furukawa FXJ-1070'
             }
           ]"

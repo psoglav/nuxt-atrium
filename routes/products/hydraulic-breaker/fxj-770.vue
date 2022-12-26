@@ -52,7 +52,7 @@ useHead({
           :items="[
             {
               href: '/pdf/hydraulic-breakers/Fxj770.pdf',
-              icon: 'pdf',
+              icon: 'fluent:document-pdf-24-filled',
               name: 'Каталог запасных частей Furukawa FXJ-770'
             }
           ]"

@@ -28,7 +28,11 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
     :style="{ animationDelay: `${key / 20}s` }"
   >
     <div class="product-card__loading-overlay" v-show="loading">
-      <ui-icon name="circle-notch" spin size="5" />
+      <icon
+        icon="ph:circle-notch-duotone"
+        width="50px"
+        class="text-white animate-spin-fast"
+      />
     </div>
     <nuxt-link
       class="product-card__link"

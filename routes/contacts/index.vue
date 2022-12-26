@@ -32,7 +32,11 @@ const contacts = ref([
     <div class="contact-cards-wrapper">
       <div class="contacts-wrapper contacts-wrapper--primary">
         <div class="contact-item">
-          <ui-icon name="office" size="2.4" />
+          <icon
+            icon="heroicons:building-office-2-20-solid"
+            width="28px"
+            class="icon"
+          />
           <div class="contact-item__content">
             <h1 class="contact-item__title text-2xl">Головной офис</h1>
             <h3 class="contact-item__text">
@@ -42,7 +46,7 @@ const contacts = ref([
           </div>
         </div>
         <div class="contact-item">
-          <ui-icon name="phone-o" size="2.2" />
+          <icon icon="ic:baseline-phone" width="28px" class="icon" />
           <div class="contact-item__content">
             <h1 class="contact-item__title text-2xl">
               <a href="tel:74232576701">+7 (423) 257 67-01</a>
@@ -50,10 +54,12 @@ const contacts = ref([
           </div>
         </div>
         <div class="contact-item">
-          <ui-icon name="email" size="2" />
+          <icon icon="ic:outline-email" width="28px" class="icon" />
           <div class="contact-item__content">
             <h1 class="contact-item__title text-2xl">
-              <a href="mail-to:info@mining-tools.info">info@mining-tools.info</a>
+              <a href="mail-to:info@mining-tools.info"
+                >info@mining-tools.info</a
+              >
             </h1>
           </div>
         </div>
@@ -67,11 +73,11 @@ const contacts = ref([
           <h4>{{ contact.name }}:</h4>
           <div class="sm-contact-wrapper">
             <div class="sm-contact-item" v-if="contact.phone">
-              <ui-icon name="phone-o" size="1" />
+              <icon icon="ic:baseline-phone" width="18px" class="icon" />
               <a href="tel:74232576701">{{ contact.phone }}</a>
             </div>
             <div class="sm-contact-item">
-              <ui-icon name="email" size="1" />
+              <icon icon="ic:outline-email" width="18px" class="icon" />
               <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
             </div>
           </div>
@@ -114,7 +120,7 @@ const contacts = ref([
     }
   }
   .contact-item {
-    @apply flex items-center gap-6;
+    @apply flex items-start gap-6;
 
     &__content {
       @apply flex flex-col h-full justify-between max-w-lg gap-y-2;
