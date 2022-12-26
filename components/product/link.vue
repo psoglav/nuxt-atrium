@@ -47,7 +47,7 @@ defineProps({
       opacity: 0.5;
     }
     .icon--arrow-forward {
-      height: min-content;
+      // height: min-content;
       opacity: 0;
       transform: translateX(-100%);
       transition: all 0.1s $easeOutCirc;
