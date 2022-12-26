@@ -19,7 +19,12 @@ const scrollToTop = () => {
 
 <style lang="scss" scoped>
 .scroll-to-top {
-  @apply flex items-center justify-center border bg-white hover:bg-gray-100 fixed bottom-8 right-8 rounded-full cursor-pointer active:bg-gray-200 active:text-white z-10 transition-opacity;
+  @apply flex items-center justify-center border hover:bg-gray-100 fixed bottom-8 right-8 rounded-full cursor-pointer active:bg-gray-200 active:text-white z-10 transition-opacity;
+  background: #ffffff22;
+  border-color: #00000066;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: gray;
   width: 5rem;
   aspect-ratio: 1/1;
   box-shadow: 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0143771),
