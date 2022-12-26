@@ -57,9 +57,7 @@ const { data: data5 } = await useAsyncData(() =>
           style="max-width: 50rem"
           class="rounded-lg w-full"
         />
-        <div class="flex w-full flex-wrap gap-8">
-          <product-table :data="data3" />
-        </div>
+        <product-table :data="data3" />
       </div>
       <br />
       <div>
@@ -70,9 +68,7 @@ const { data: data5 } = await useAsyncData(() =>
           style="max-width: 50rem"
           class="rounded-lg w-full"
         />
-        <div class="flex w-full flex-wrap gap-8">
-          <product-table :data="data5" />
-        </div>
+        <product-table :data="data5" />
       </div>
       <br />
       <product-contact-form

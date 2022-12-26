@@ -1,5 +1,6 @@
 <script setup>
 import ProductList from './components/ProductList.vue'
+import { chunk } from '~~/helpers'
 
 const drillRig = ref([
   {
@@ -149,22 +150,12 @@ const drillingTool = ref([
           :links="product.links"
         >
           <div
-            class="grid-cols-2 gap-x-4"
-            :class="{ grid: product.links.slice(5, 8).length }"
+            class="grid gap-x-4"
+            :class="[`grid-cols-${chunk(product.links, 5).length}`]"
           >
-            <div>
+            <div v-for="(chunk, k) in chunk(product.links, 5)" :key="k">
               <product-link
-                v-for="(link, j) of product.links.slice(0, 5)"
-                :key="j"
-                :path="product.path + '/' + link[0]"
-                icon="tabler:external-link"
-                :value="link[1]"
-                @click="loading = true"
-              />
-            </div>
-            <div>
-              <product-link
-                v-for="(link, j) of product.links.slice(5, 8)"
+                v-for="(link, j) of chunk"
                 :key="j"
                 :path="product.path + '/' + link[0]"
                 icon="tabler:external-link"
