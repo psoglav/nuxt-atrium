@@ -107,12 +107,10 @@
 
   &__icon {
     .icon {
-      @apply sm:w-24 w-32;
-      display: grid;
-      place-content: center;
+      @apply sm:w-24 w-32 flex items-center justify-center mb-4;
       aspect-ratio: 1/1;
       border: 2px #f2f2f2 solid;
-      outline: 6px #f2f2f233 solid;
+      box-shadow: 0 0 0 6px #f2f2f233;
       border-radius: 100%;
       background-color: #000;
     }

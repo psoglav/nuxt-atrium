@@ -27,6 +27,10 @@ br {
   @apply mb-2;
 }
 
+a.default-link {
+  @apply hover:text-accent;
+}
+
 h1,
 h2,
 h3,

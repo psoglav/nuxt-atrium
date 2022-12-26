@@ -9,10 +9,14 @@ defineProps({
     <h4>{{ title }}</h4>
     <div class="product-contact--wrapper">
       <div class="product-contact__item">
-        <ui-icon name="phone" size=".8" /> 8 (423) 257-67-01
+        <ui-icon name="phone" size=".8" />
+        <a href="tel:84232576701" class="default-link">8 (423) 257-67-01</a>
       </div>
       <div class="product-contact__item">
-        <ui-icon name="email" size="1.1" /> info@mining-tools.info
+        <ui-icon name="email" size="1.1" />
+        <a href="mailto:info@mining-tools.info" class="default-link"
+          >info@mining-tools.info</a
+        >
       </div>
     </div>
   </div>

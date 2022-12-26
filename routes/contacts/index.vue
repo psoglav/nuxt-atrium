@@ -1,11 +1,6 @@
 <script setup>
 const contacts = ref([
   {
-    name: 'Общий',
-    email: 'info@mining-tools.info',
-    phone: '+7 (423) 257 67-01'
-  },
-  {
     name: 'Отдел продаж буровых станков Furukawa',
     email: 'an@mining-tools.info',
     phone: '8 (914) 067 62-76'
@@ -47,10 +42,18 @@ const contacts = ref([
           </div>
         </div>
         <div class="contact-item">
-          <ui-icon name="phone-o" size="2.4" />
+          <ui-icon name="phone-o" size="2.2" />
           <div class="contact-item__content">
-            <h1 class="contact-item__title font-semibold">
+            <h1 class="contact-item__title text-2xl">
               <a href="tel:74232576701">+7 (423) 257 67-01</a>
+            </h1>
+          </div>
+        </div>
+        <div class="contact-item">
+          <ui-icon name="email" size="2" />
+          <div class="contact-item__content">
+            <h1 class="contact-item__title text-2xl">
+              <a href="mail-to:info@mining-tools.info">info@mining-tools.info</a>
             </h1>
           </div>
         </div>
@@ -107,7 +110,7 @@ const contacts = ref([
       @apply gap-y-10;
     }
     &--secondary {
-      @apply w-full xl:flex-wrap gap-y-10 gap-x-20 xl:max-h-96;
+      @apply w-full xl:flex-wrap gap-y-10 gap-x-20 xl:max-h-64;
     }
   }
   .contact-item {

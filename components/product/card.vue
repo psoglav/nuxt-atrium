@@ -169,7 +169,7 @@ const key = ref(parseInt(getCurrentInstance()?.vnode.key as string) || 0)
   }
 
   &__content {
-    @apply w-full px-4;
+    @apply w-full px-8 sm:px-6;
     h1 {
       font: 600 1.1rem Inter;
       transition: color 0.2s $easeOutCirc;
